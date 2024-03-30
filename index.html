@@ -1,18 +1,38 @@
 <html>
   
   <style>
+    
+    * {
+      border: red solid;
+    }
+    
     body {
       padding-top: 40px;
       padding-bottom: 40px;
       background-color:black ;
+      display: flex;
+      justify-content: center;
     }    
     
-  .banner-image{
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
+    .banner-image{
       width: 128px;
       height: 128px;
       object-fit: cover;
       border-radius: 128px;      
     }  
+
+    .banner{
+      display: flex;
+      justify-content: center;
+    }
 
     .thumbnail{
       width: 48px;
@@ -23,56 +43,64 @@
 
     .name{
       color: darkgray;
-      font-size: 20px;
+      display: flex;
+      justify-content: center;
     }
 
     .social-icons a{
       color: darkgray;
-    text-decoration: none;
-    }
+      text-decoration: none;
+      justify-content: space-around;
+      flex-grow: 1;
+      }
 
     .link a {
-    color: darkgray;
-    text-decoration: none;
+      color: darkgray;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
 
+    .link{
+      display: flex;
+      align-items: center;
+    }
 
   </style>
 
-  <head>
-    
-  </head>
 </html>
 
 
 <body>
-  <div class="banner">
-    <img src="Pictures/rafael_savi_photo.jpeg" alt="Rafael Savi headshot" class="banner-image">
+  <div class = "items">
+
+    <div class="banner">
+      <img src="Pictures/rafael_savi_photo.jpeg" alt="Rafael Savi headshot" class="banner-image">
+    </div>
+  
+    <div class="name">
+      Rafael Savi
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/rafaelbsavi/" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/rafael_savi/" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://github.com/rbsavi" target="_blank">
+        GitHub
+      </a>
+    </div>
+
+    <div class="link">
+      <img src="Pictures/brazil-journal.jpg" class="thumbnail">
+      
+      <a target="_blank"
+        href="https://braziljournal.com/"> Best Brazilian News Website</a>
+    </div>
   </div>
-
-  <div class="name">
-    Rafael Savi
-  </div>
-
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/rafaelbsavi/" target="_blank">
-      LinkedIn
-    </a>
-
-    <a href="https://www.instagram.com/rafael_savi/" target="_blank">
-      Instagram
-    </a>
-
-    <a href="https://github.com/rbsavi" target="_blank">
-      GitHub
-    </a>
-  </div>
-
-  <div class="link">
-    <img src="Pictures/brazil-journal.png" class="thumbnail">
-
-    <a target="_blank"
-      href="https://braziljournal.com/"> Brazil Journal Website</a>
-  </div>
-
 </body>
